@@ -1,0 +1,66 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF009966"
+    android:gravity="center"
+    android:padding="10dp">
+    <!--Textview 1-->
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:text="Welcome to"
+        android:textAlignment="center"
+        android:textColor="#FFFF0000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <!--TextView 2-->
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview1"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:text="CS102 – Website and Mobile App Development Principles"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF00"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!--TextView 3-->
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview2"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:text="Semester 1"
+        android:textAlignment="center"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+        
+  <!--Add a textClock-->
+  <TextClock
+    android:id="@+id/my_clock"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textview3"
+    android:layout_centerHorizontal="true"
+    android:format12Hour="@null"
+    android:format24Hour="MMM dd, yyyy k:mm"
+    android:textColor="#e4ed5a"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    android:timeZone="GMT+1300" />
+    
+</RelativeLayout>
